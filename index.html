@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JohnYboT</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="left-box">
+            <div class="wrapper">
+                <img src="img/#" class="logo" alt="">
+                <div class="search-box">
+                    <img src="img/search.png" alt="">
+                    <input type="text" placeholder="Search">
+                </div>
+
+                <div class="vertical-line"></div>
+
+                <ul>
+                    <li><a href="#">Produktivita</a></li>
+                    <li><a href="#">Zariadenia</a></li>
+                    <li><a href="#">Mechanizmus</a></li>
+                    <li><a href="#">Môj Tým</a></li>
+                    <li><a href="#">Moje nápady</a></li>
+                </ul>
+
+            </div>
+            </div>
+
+            <div class="right-box">
+             <nav>
+                 <ul>
+                     <li><a href="#">Domov</a></li>
+                     <li><a href="#">O mne</a></li>
+                     <li><a href="#">Vlastnosti</a></li>
+                     <li><a href="#">Kontakt</a></li>
+                 </ul>
+             </nav>
+
+             <h2>NOVÁ <br> GENERÁCIA</h2>
+
+             <div class="robot">
+                 <img src="img/robo.png" alt=""> 
+                 <h1>ROBOTICS </h1>
+                 <div class="features">
+                    <div>
+                        <small>POZRI SI UKÁŽKU</small>
+                        <img src="img/play.png" alt="">
+                       </div>     
+
+                 <div>
+                 <small>PRACOVANIE</small>
+                 <img src="img/settings.png" alt="">
+                </div>
+
+            <div>
+                <small>STIAHNUŤ PDF</small>
+                <img src="img/download.png" alt="">
+               </div>
+              </div>
+            </div>
+
+             <div class="circle"></div>
+
+             <div class="pagination">
+                 <ul>
+                     <li class="active"><a href="#">01</a></li>
+                     <li><a href="#">02</a></li>
+                     <li><a href="#">03</a></li>
+                     <li><a href="#">04</a></li>
+                     <li><a href="#">05</a></li>
+                 </ul>
+             </div>
+             <img src="img/volume.png" alt="" class="volume">
+        </div>
+
+    </div>
+
+       <div class="smallCursor"></div>   
+       <div class="largeCursor"></div>   
+
+       <script>
+ 
+      var smallCursor = document.querySelector(".smallCursor");
+      var largeCursor = document.querySelector(".largeCursor");
+
+      document.onmousemove = function(e){
+          smallCursor.style.left = (e.pageX - 5) + "px";
+          smallCursor.style.top = (e.pageY - 5) + "px";
+
+          smallCursor.style.display ="block";
+
+          largeCursor.style.left = (e.pageX - 22) + "px";
+          largeCursor.style.top = (e.pageY - 22) + "px";
+
+          largeCursor.style.display ="block";
+      }
+
+
+       </script>
+
+</body>
+</html>
